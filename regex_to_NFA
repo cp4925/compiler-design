@@ -1,4 +1,4 @@
-# Lab 2: Conversion of Regular Expression to NFA
+#Conversion of Regular Expression to NFA
 
 ## Aim
 To design and implement a C++ program that converts a given regular expression into its equivalent Non-Deterministic Finite Automaton (NFA).

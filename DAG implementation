@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    printf("Expression: a = b + c\n");
+    printf("d = b + c\n\n");
+
+    printf("DAG Optimization:\n");
+    printf("Compute b + c once and reuse\n");
+
+    printf("\nOptimized Code:\n");
+    printf("t1 = b + c\n");
+    printf("a = t1\n");
+    printf("d = t1\n");
+
+    return 0;
+}

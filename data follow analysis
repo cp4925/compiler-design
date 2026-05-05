@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    printf("Statement:\n");
+    printf("1: a = b + c\n");
+    printf("2: d = a + e\n");
+    printf("3: return d\n\n");
+
+    printf("Live Variables:\n");
+    printf("After stmt 3: d\n");
+    printf("After stmt 2: a, e\n");
+    printf("After stmt 1: b, c\n");
+
+    return 0;
+}

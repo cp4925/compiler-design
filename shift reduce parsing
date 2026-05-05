@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <string.h>
+
+char stack[20], input[20];
+int top = -1;
+
+void push(char c) {
+    stack[++top] = c;
+}
+
+void pop() {
+    top--;
+}
+
+int main() {
+    int i = 0;
+    printf("Enter input string (e.g., i+i*i): ");
+    scanf("%s", input);
+
+    printf("\nSTACK\tINPUT\tACTION\n");
+
+    while(input[i] != '\0') {
+        push(input[i]);
+        printf("%s\t%s\tShift %c\n", stack, input+i, input[i]);
+        i++;
+
+        if(stack[top] == 'i') {
+            pop();
+            push('E');
+            printf("%s\t%s\tReduce E->i\n", stack, input+i);
+        }
+    }
+
+    if(stack[top] == 'E')
+        printf("\nString Accepted\n");
+    else
+        printf("\nString Rejected\n");
+
+    return 0;
+}

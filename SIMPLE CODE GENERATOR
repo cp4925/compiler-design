@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    printf("Three Address Code:\n");
+    printf("t1 = b * c\n");
+    printf("t2 = a + t1\n");
+    printf("d = t2\n");
+
+    printf("\nTarget Code:\n");
+    printf("MOV R1, b\n");
+    printf("MUL R1, c\n");
+    printf("ADD R1, a\n");
+    printf("MOV d, R1\n");
+
+    return 0;
+}

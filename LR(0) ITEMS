@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    printf("LR(0) Items for Grammar E->E+T | T\n\n");
+
+    printf("I0:\n");
+    printf("E -> .E+T\n");
+    printf("E -> .T\n");
+    printf("T -> .id\n");
+
+    printf("\nI1:\n");
+    printf("E -> E.+T\n");
+
+    printf("\nI2:\n");
+    printf("E -> T.\n");
+
+    printf("\nTransitions:\n");
+    printf("I0 --id--> I2\n");
+    printf("I0 --E--> I1\n");
+
+    return 0;
+}

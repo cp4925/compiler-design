@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int a = 10;
+    int b = 20;
+    int sum;
+
+    sum = a + b;
+
+    printf("Stack Allocation Example\n");
+    printf("a = %d, b = %d\n", a, b);
+    printf("sum = %d\n", sum);
+
+    printf("\nMemory (Stack Frame Simulation):\n");
+    printf("| sum |\n");
+    printf("| b   |\n");
+    printf("| a   |\n");
+
+    return 0;
+}

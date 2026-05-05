@@ -1,4 +1,4 @@
-# Lab 4: Elimination of Left Recursion
+#Elimination of Left Recursion
 
 ## Aim
 To implement a C++ program to eliminate left recursion from a given context-free grammar.
